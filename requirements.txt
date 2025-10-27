@@ -7,16 +7,11 @@ crewai-tools==0.1.0
 
 # LangChain for RAG pipeline
 langchain==0.2.14
-langchain-community==0.2.8
-langchain-openai==0.1.15
+langchain-community==0.2.9   # updated from 0.2.8 (0.2.8 unavailable)
 
-# Vector databases (choose the one you use; keep only relevant ones)
+# Vector DB
 chromadb==0.5.5
 
-# Embeddings and LLMs
+# Embeddings / LLMs
 openai==1.43.0
 tiktoken==0.7.0
-
-# Optional visualization / UI helpers
-plotly==5.24.0
-streamlit-extras==0.4.0
