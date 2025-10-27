@@ -1,17 +1,27 @@
-# Core app framework
+# --- Core app framework ---
 streamlit==1.37.0
+streamlit-extras==0.4.0
+plotly==5.24.0
 
-# CrewAI agentic framework
-crewai==0.28.0
+# --- CrewAI agentic framework ---
+# 0.28.0 was unstable / yanked → use 1.2.1 (API-compatible with 0.28+)
+crewai==1.2.1
 crewai-tools==0.1.0
 
-# LangChain for RAG pipeline
-langchain==0.2.14
-langchain-community==0.2.9   # updated from 0.2.8 (0.2.8 unavailable)
+# --- LangChain for RAG pipeline ---
+# 0.2.14 & 0.2.8 conflicted → upgrade to a matched, non-yanked pair
+langchain==0.3.9
+langchain-community==0.3.9
+langchain-openai==0.1.15
 
-# Vector DB
+# --- Vector database (Chroma) ---
 chromadb==0.5.5
 
-# Embeddings / LLMs
+# --- Embeddings / LLM access ---
 openai==1.43.0
 tiktoken==0.7.0
+
+# --- Utilities ---
+python-dotenv==1.0.1
+pydantic==2.9.2
+tenacity==8.5.0
